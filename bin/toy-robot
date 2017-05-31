@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+Dir["#{Dir.pwd}/lib/**/*.rb"].each { |file| require file }
+
+Client.new.start
