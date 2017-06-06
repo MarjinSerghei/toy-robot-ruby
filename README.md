@@ -3,9 +3,9 @@ Toy Robot Simulator - Ruby
 
 ## Notes
 
-The command pattern was used to interpret user input and create Ruby objects representing these commands. The commands know about a Simulation object which is used to interact with the Table and Robot objects.
+This is a slightly changed/polished solution of Liam Norton's based on Command Pattern.
 
-===============================
+The command pattern was used to interpret user input and create Ruby objects representing these commands. The commands know about a Simulation object which is used to interact with the Table and Robot objects.
 
 Description
 -----------
@@ -67,13 +67,13 @@ Expected output:
 
 ### Example b
 
-    PLACE 0,0,NORTH
+    PLACE 0,0,SOUTH
     LEFT
     REPORT
 
 Expected output:
 
-    0,0,WEST
+    0,0,EAST
 
 ### Example c
 
@@ -87,13 +87,3 @@ Expected output:
 Expected output
 
     3,3,NORTH
-
-Deliverables
-------------
-
-Please provide your source code, and any test code/data you using in
-developing your solution.
-
-Please engineer your solution to a standard you consider suitable for
-production. It is not required to provide any graphical output showing the
-movement of the toy robot.
